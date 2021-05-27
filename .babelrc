@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "node": "current" }
+      }
+    ]
+  ],
+  "plugins": ["@babel/transform-runtime", "@babel/proposal-object-rest-spread"],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "istanbul",
+          {
+            "exclude": ["**/*.spec.js", "**/*.test.js"],
+            "useInlineSourceMaps": false
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "urbanspace",
+  "version": "1.0.0",
+  "description": "Urbanspace backend apis",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist",
+    "dev": "DEBUG='api:*' nodemon --exec babel-node src/server.js",
+    "debug": "nodemon --exec babel-node --inspect src/server.js",
+    "restart": "npm run build && npm start",
+    "sync-env": "sync-dotenv"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "urbanspace"
+  ],
+  "author": "Urbanspace<tech@urbanspace.com.ng>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ahmanemmanuel/urbanspace-app/issues"
+  },
+  "homepage": "https://gitlab.com/ahmanemmanuel/urbanspace-app#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "agenda": "^3.0.0",
+    "bcrypt-node": "^0.1.0",
+    "cloudinary": "^1.20.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-validator": "^6.4.0",
+    "kue": "^0.11.6",
+    "googleapis": "^47.0.0",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1",
+    "node-mailjet": "^3.3.1",
+    "password-validator": "^5.0.3",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-istanbul": "^6.0.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "coveralls": "^3.0.9",
+    "cross-env": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "sync-dotenv": "^2.4.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "require": ["@babel/register", "regenerator-runtime/runtime"],
+  "reporter": ["html", "lcov", "text"],
+  "include": ["src/**/*.js"],
+  "exclude": ["**/*.spec.js", "**/*.test.js", "src/config/*.js"],
+  "sourceMap": false,
+  "instrument": false,
+  "check-coverage": true,
+  "lines": 90,
+  "statements": 90,
+  "functions": 90,
+  "branches": 90
+}
